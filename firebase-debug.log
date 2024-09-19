@@ -1,0 +1,42 @@
+[debug] [2024-09-09T17:04:46.289Z] ----------------------------------------------------------------------
+[debug] [2024-09-09T17:04:46.292Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Yidne\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2024-09-09T17:04:46.293Z] CLI Version:   13.16.0
+[debug] [2024-09-09T17:04:46.293Z] Platform:      win32
+[debug] [2024-09-09T17:04:46.293Z] Node Version:  v20.15.1
+[debug] [2024-09-09T17:04:46.293Z] Time:          Mon Sep 09 2024 13:04:46 GMT-0400 (Eastern Daylight Time)
+[debug] [2024-09-09T17:04:46.293Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-09-09T17:04:46.356Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-09-09T17:04:46.356Z] > authorizing via signed-in user (mcyidne@gmail.com)
+[debug] [2024-09-09T17:04:46.356Z] [iam] checking project netflix-april-c2daf for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2024-09-09T17:04:46.358Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-april-c2daf:testIamPermissions [none]
+[debug] [2024-09-09T17:04:46.358Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-april-c2daf:testIamPermissions x-goog-quota-user=projects/netflix-april-c2daf
+[debug] [2024-09-09T17:04:46.358Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-april-c2daf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-09T17:04:46.564Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-april-c2daf:testIamPermissions 200
+[debug] [2024-09-09T17:04:46.564Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/netflix-april-c2daf:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2024-09-09T17:04:46.565Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/netflix-april-c2daf [none]
+[debug] [2024-09-09T17:04:47.086Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/netflix-april-c2daf 200
+[debug] [2024-09-09T17:04:47.087Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/netflix-april-c2daf {"projectId":"netflix-april-c2daf","projectNumber":"591105253045","displayName":"Netflix-April","name":"projects/netflix-april-c2daf","resources":{"hostingSite":"netflix-april-c2daf"},"state":"ACTIVE","etag":"1_938a7898-83ef-4751-9419-3e50c2c6e342"}
+[debug] [2024-09-09T17:04:47.088Z] Specified "public" directory "dist" does not exist; Deploy to Hosting site "netflix-april-c2daf" may fail or be empty.
+[info] 
+[info] === Deploying to 'netflix-april-c2daf'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2024-09-09T17:04:47.093Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/netflix-april-c2daf/versions [none]
+[debug] [2024-09-09T17:04:47.093Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/netflix-april-c2daf/versions {"status":"CREATED","labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2024-09-09T17:04:47.629Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/netflix-april-c2daf/versions 500
+[debug] [2024-09-09T17:04:47.630Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/projects/-/sites/netflix-april-c2daf/versions {"error":{"code":500,"message":"Internal error encountered.","status":"INTERNAL"}}
+[error] 
+[error] Error: HTTP Error: 500, Internal error encountered.
+[debug] [2024-09-09T17:04:47.657Z] Error Context: {
+  "body": {
+    "error": {
+      "code": 500,
+      "message": "Internal error encountered.",
+      "status": "INTERNAL"
+    }
+  },
+  "response": {
+    "statusCode": 500
+  }
+}

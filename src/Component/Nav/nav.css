@@ -1,0 +1,57 @@
+.nav{
+   color: rgb(246, 245, 245);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 20px;
+    background-color: transparent;
+    /* height: 30px; */
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    transform: all 0.5s;
+    -o-transition-timing-function: ease-in;
+    /* background-color:  ; */
+    backdrop-filter: blur(0);
+}
+
+
+.nav__black{
+background-color: #111;
+}
+ svg.nav_logo{
+    height: 25px;
+    fill: red;
+   
+    left: 20px;
+    width: 90px;
+    object-fit: contain;
+ }
+ .nav__avatar{
+    
+    right: 20px;
+    width: 30px;
+    object-fit: contain;
+ }
+
+ /* .offcanvas-body {
+   flex-grow: 1;
+   padding: var(--bs-offcanvas-padding-y) var(--bs-offcanvas-padding-x);
+   overflow-y: auto;
+} */
+ .offcanvas.show {
+   visibility: visible;
+}
+.text-center {
+   text-align: center !important;
+}
+.sticky {
+   position: fixed;
+   -webkit-backdrop-filter: blur(40px);
+   backdrop-filter: blur(40px);
+}
+.offcanvas__bg {
+   background-color: transparent;
+   -webkit-backdrop-filter: blur(20px);
+   backdrop-filter: blur(20px);
+}
