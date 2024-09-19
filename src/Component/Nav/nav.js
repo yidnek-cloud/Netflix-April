@@ -2,10 +2,10 @@ import React, { useEffect, useState } from 'react';
 import "./nav.css";
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
-import Form from 'react-bootstrap/Form';
+//import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
+//import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import { FaSearch } from "react-icons/fa";
 import { MdOutlineNotificationsNone } from "react-icons/md";
@@ -43,7 +43,7 @@ function Header() {
         placement="start"
         className="offcanvas-start offcanvas__bg"
       >
-        <Offcanvas.Header closeButton>
+        <Offcanvas.Header close>
           {/* <Offcanvas.Title id={`offcanvasNavbarLabel-expand-lg`}>
             Offcanvas
           </Offcanvas.Title> */}
